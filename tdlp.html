@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> to do list </title>
+<script>
+
+// below code may not work
+function todoList() {
+  var item = document.getElementById("todoInput").value
+  var text = document.createTextNode(item)
+  var newItem = document.createElement("li")
+  newItem.appendChild(text)
+  document.getElementById("todoList").appendChild(newItem);
+
+}
+ </script>
+
+</head>
+<body>
+  <h1> To Do List App </h1>
+  <form id="todoForm">
+    <input id="todoInput">
+    <button type="button" onclick="todoList()">Click Me</button>
+</form>
+<ol id="todoList">
+</ol>
+
+
+      <span>
+        <li>
+          <a href="http://www.Facebok.com/kyle james mullikin">my Facebook ? </a> <br> <br>
+        </li>
+        <li>
+          <a href=" http://www.sololearn.com"> sololearn/ learn code for free</a> <br><br>
+        </li>
+        <li>
+          <a href="http://www.w3schools.com">w3schools.com</a>
+        </li>
+      </ul></span> <br/>
+
+<style>
+body {
+  background-color: white;
+  color: red;
+  position: center;
+  text-align: center;
+font-style: bold;
+font-size: 13px;
+}
+
+span {  /* theses are the links at the top of the page and where i placed them */
+      /* there is an issue w/ the borders appearance in the browser... fix it */
+  color: green;
+  border: groove; /*this may not be needed ?? */
+  border-width: small;
+  border-style: dashed;
+  border-color: blue;
+  text-align: left;
+
+}
+
+</style>
+
+</body>
+</html>
